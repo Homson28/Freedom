@@ -64,4 +64,17 @@
 <br/>success
 <br/>
 <br/>$ ps -aux|grep shadowsocks
-
+<br/>
+<br/>
+<br/>
+==SSR Config==
+<br/>
+<br/>apt-get install wget
+<br/>or
+<br/>yum -y install wget
+<br/>
+<br/>wget -N --no-check-certificate https://softs.fun/Bash/ssr.sh && chmod +x ssr.sh && bash ssr.sh
+<br/>or
+<br/>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
+<br/>
+<br/>

@@ -89,3 +89,11 @@ wget -N --no-check-certificate https://softs.fun/Bash/ssr.sh && chmod +x ssr.sh 
 or
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 ```
+
+#### Install BBR command
+```
+wget https://github.com/teddysun/across/archive/master.zip
+unzip master.zip
+chmod +x ./across-master/bbr.sh
+./across-master/bbr.sh
+```

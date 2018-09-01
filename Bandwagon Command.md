@@ -97,3 +97,12 @@ unzip master.zip
 chmod +x ./across-master/bbr.sh
 ./across-master/bbr.sh
 ```
+重启完成后，进入 VPS,验证一下是否成功安装最新内核并开启 TCP BBR,输入以下命令：
+```
+uname -r
+```
+查看内核版本，含有 4.10 就表示 OK 了,最后输入命令,返回值有 tcp_bbr 模块即说明bbr已启动。
+```
+lsmod | grep bbr
+```
+

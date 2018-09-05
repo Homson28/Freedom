@@ -25,7 +25,7 @@ more /etc/shadowsocks.json
 "server":"0.0.0.0",//IP 
 "server_port":8088,//Port
 "local_port":1080,//local port
-"password":"******",//PSW􏵎 
+"password":"******",//PSW
 "timeout":600,//timeout
 "method":"aes-256-cfb"//Method
 }
@@ -93,8 +93,9 @@ success
 $ firewall-cmd --reload 
 success
 ```
+```
 $ ps -aux|grep shadowsocks
-
+```
 
 # SSR Setting
 #### Install command

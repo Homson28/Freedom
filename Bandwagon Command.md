@@ -31,12 +31,30 @@ more /etc/shadowsocks.json
 }
 ```
 
-#### Start SS server
+#### SS Service
+create the new shell "/etc/systemd/system/shadowsocks.service"
+```
+[Unit]
+Description=Shadowsocks
+
+[Service]
+TimeoutStartSec=0
+ExecStart=/usr/bin/ssserver -c /etc/shadowsocks.json
+
+[Install]
+WantedBy=multi-user.target
+```
+#### Start SS Servie 
+```
+systemctl enable shadowsocks
+systemctl start shadowsocks
+
+systemctl status shadowsocks -l
+```
+The second way to start SS Server directly
 ```
 ssserver -c /etc/shadowsocks.json -d start
 ssserver -c /etc/shadowsocks.json -d stop
-
-systemctl status shadowsocks -l
 ```
 
 #### mutiple user setting

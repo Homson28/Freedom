@@ -85,14 +85,26 @@ systemctl stop firewalld.service //stop the firewall
 
 systemctl disable firewalld.service //disable firewall start with system
 ```
+
+####TCP Port
 ```
-$ firewall-cmd --query-port=8088/tcp //check the prot status
+//check the prot status
+$ firewall-cmd --list-ports
+$ firewall-cmd --query-port=8088/tcp 
 no
-$ firewall-cmd --zone=public --add-port=8089/tcp --permanent //set the port open 
+
+//set the port open
+$ firewall-cmd --zone=public --add-port=8089/tcp --permanent  
 success
+
+//remove port
+$ firewall-cmd --zone=public --remove-port=8088/tcp --permanent
+
+//reload setting
 $ firewall-cmd --reload 
 success
 ```
+
 ```
 $ ps -aux|grep shadowsocks
 ```

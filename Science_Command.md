@@ -86,7 +86,7 @@ systemctl stop firewalld.service //stop the firewall
 systemctl disable firewalld.service //disable firewall start with system
 ```
 
-####TCP Port
+#### TCP Port
 ```
 //check the prot status
 $ firewall-cmd --list-ports

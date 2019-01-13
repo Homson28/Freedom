@@ -77,13 +77,17 @@ ssserver -c /etc/shadowsocks.json -d stop
 
 #### Command 
 ```
+//Check the firewall status
 systemctl status firewalld.service
 
-systemctl start firewalld.service //Start the firewall
+//Start the firewall
+systemctl start firewalld.service 
 
-systemctl stop firewalld.service //stop the firewall
+//stop the firewall
+systemctl stop firewalld.service 
 
-systemctl disable firewalld.service //disable firewall start with system
+//disable firewall start with system
+systemctl disable firewalld.service 
 ```
 
 #### TCP Port
